@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home work</title>
+<body>
+<div id="container"></div>
+<input id="add-item-btn" type="button" value="+" onclick="addElement()">
+
+
+<script>
+function addElement() {
+  var container = document.getElementById('container')
+  var div = document.createElement('div');
+    div.className = 'element';
+    div.innerHTML = 'Element';
+
+    container.appendChild(div)
+}
+</script>
+</body>
+</html>

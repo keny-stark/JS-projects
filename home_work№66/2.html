@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home work</title>
+<body>
+	<div class="element">Element 1</div>
+	<div class="element">Element 2</div>
+	<div class="element">Element 3</div>
+	<div class="element">Element 4</div>
+	<div class="element">Element 5</div>
+	<div class="element">Element 6</div>
+
+<script>
+	let element = document.getElementsByClassName('element')
+	console.log(element)
+	for (var i = 0; i < element.length; i++) {
+		if (i <= 2){
+    			element[i].style.color = 'red';
+    		}
+    	else {
+    		element[i].style.color = 'green';
+    	}
+	}
+	
+</script>
+</body>
+</html>
