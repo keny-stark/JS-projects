@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home work</title>
+<body>
+<div id="container"></div>
+
+    <script>
+
+        function randomInteger(min, max) {
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+
+        function addElement() {
+            const container = document.getElementById('container');
+            const div = document.createElement('div');
+            div.className = 'element';
+            div.innerHTML = `${randomInteger(0, 20)}`;
+            container.appendChild(div)
+        }
+
+            setInterval(addElement, 5000);
+
+
+    </script>
+    </body>
+    </html>
